@@ -1,3 +1,3 @@
-Aula 01
+Aula 02
 
-Foi realizado a instalação do flutter, a criação do primeiro projeto e teste de execução.
+Foi estudado sobre a declaração de variáves, funções, estruturas de controle.

@@ -1,8 +1,61 @@
 import 'package:flutter/material.dart';
-
 void main() {
+  tiposDeDados();
+  estruturasDeControles();
+  print(helloWorld("Lucas"));
+  print(ePar(2));
+  listasEMapas();
   runApp(const MyApp());
 }
+
+// Declaração de função
+void tiposDeDados(){
+  // Declaração de variáveis
+  int idade = 25;
+  double altura = 1.80;
+  String nome = "Lucas";
+  bool ativo = true;
+
+  print('---Tipos de Dados---');
+  print('Idade: $idade');
+  print('Altura: $altura');
+  print('Nome: $nome');
+  print('Ativo: $ativo');
+}
+
+void estruturasDeControles(){
+  int idade = 17;
+
+  print('---Estruturas de Controle---');
+  if (idade >= 18){
+    print("Maior de Idade");
+  } else {
+    print("Menor de Idade");
+  }
+}
+
+String helloWorld (String nome){
+  return 'Olá, $nome!';
+}
+
+bool ePar(int numero){
+  return numero%2 == 0;
+}
+
+void listasEMapas(){
+
+  print('---Listas e mapas---');
+
+  List<int> numeros = [1,2,3];
+  numeros.forEach((numeros) => print("Numero é: $numeros"));
+
+  Map <String, String> capital = {"Brasil":"Brasilia","França":"Paris"};
+  capital.forEach((pais, cidade){
+    print('A capital de $pais é $cidade');
+  });
+
+}
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

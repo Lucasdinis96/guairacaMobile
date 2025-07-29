@@ -1,5 +1,5 @@
 Aula 02 - Exercício
-Saida do console
+Saída do console
 
 js_primitives.dart:28 Nome: Lucas
 js_primitives.dart:28 Idade: 28

@@ -35,7 +35,7 @@ void main(){
   double altura = 1.84;
   bool flutter = true;
   
-  // Chamade de funções
+  // Chamada de funções
   dados(nome,idade,altura,flutter);
   verificaoIdade(idade);
   print(apresentarAluno('Lucas', 28, true));

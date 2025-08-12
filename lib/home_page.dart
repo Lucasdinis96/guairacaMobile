@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_guairaca/app_routes.dart';
 import 'package:flutter_guairaca/widgets/welcome_text.dart';
 
 class HomePage extends StatelessWidget {
@@ -15,7 +16,7 @@ class HomePage extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed:(){
-          print('Botão pressionado');
+          Navigator.pushNamed(context, AppRoutes.detalhes);
         },
         child: const Icon(Icons.add),
       ),

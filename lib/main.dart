@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_guairaca/home_page.dart';
+import 'package:flutter_guairaca/app_routes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,9 +10,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: 'Meu primeiro app',
-      home: HomePage(),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      initialRoute: AppRoutes.home,
+      routes: AppRoutes.routes,
     );
   }
 }

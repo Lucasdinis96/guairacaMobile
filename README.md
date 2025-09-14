@@ -1,3 +1,1 @@
-Aula 07 - Incio do projeto de finaças
-
-Instalação de firebas
+Aula 08 - Configuração do firebase

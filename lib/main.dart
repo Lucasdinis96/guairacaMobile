@@ -1,5 +1,6 @@
+import 'package:financing_app/app_routes.dart';
+import 'package:financing_app/services/auth_service.dart';
 import 'package:financing_app/services/firebase_initializer.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -15,10 +16,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context){
     return ChangeNotifierProvider(
-      //create: (),
+      create: (context) => AuthService(),
       child: MaterialApp(
         title: 'Finance App',
         theme: ThemeData(primarySwatch: Colors.blue),
+        initialRoute: AppRoutes.login,
+        routes: AppRoutes.routes,
       ),
     );
   }

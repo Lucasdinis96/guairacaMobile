@@ -1,1 +1,1 @@
-Aula 08 - Configuração do firebase
+Aula 09 - Criação da tela de login, service e class expense e ajuste de rotas e service de autenticação.

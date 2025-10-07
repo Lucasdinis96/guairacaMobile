@@ -1,1 +1,1 @@
-Aula 09 - Criação da tela de login, service e class expense e ajuste de rotas e service de autenticação.
+Aula 10 - Criação das paginas de expenses, roteamento da tela e conexão com o firestone database

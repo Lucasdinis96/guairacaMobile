@@ -1,3 +1,4 @@
+import 'package:financing_app/screens/expenses/expenses_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -129,7 +130,12 @@ class _LoginPageState extends State<LoginPage> {
 
     try {
       await context.read<AuthService>().signIn(_email.text.trim(), _password.text.trim());
-      setState(() => _success = true);
+      //setState(() => _success = true);
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(
+          builder: (context) => const ExpensesPage()
+        )
+      );
     } on FirebaseAuthException catch (e) {
       setState(() => _error = _handleFirebaseError(e));
     } catch (e) {
